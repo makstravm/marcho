@@ -1,10 +1,10 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
@@ -34,6 +34,10 @@ dd {
 
 ul[class] {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
