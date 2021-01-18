@@ -16,24 +16,24 @@
   &__list {
     display: flex;
   }
-  &__list-item + .menu__list-item {
+  &__list-item + .menu__list-item {   
     padding-left: 35px;
   }
   &__list-link {
     color: $title;
-    padding-bottom: 1px;
-    transition: all 0.3s;
-    @extend %quicksand-400;
+    padding: 0 2px 1px;
+    transition: all .3s;
+    @extend %roboto-400;
     &:hover {
       color: $accent;
       border-bottom: 1px solid $accent;
-      @extend %quicksand-500;
+      font-weight: 700;
     }
   }
   &__list-link--active {
     color: $accent;
     border-bottom: 1px solid $accent;
-    @extend %quicksand-500;
+    @extend %roboto-700;
   }
 }
 
