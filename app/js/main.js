@@ -6,5 +6,7 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 2000
   })
-
+  $('video-fashion__popup').fancybox({
+   
+  });
 });
