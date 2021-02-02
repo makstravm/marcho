@@ -101,12 +101,11 @@ a {
     display: flex;
     padding: 0 35px;
   }
-  &__item{
-padding: 0 15px;
+  &__item {
+    padding: 0 15px;
   }
-  &__link--active{
+  &__link--active {
     color: $accent;
-
   }
   &__arrows {
     text-transform: uppercase;
@@ -132,5 +131,30 @@ padding: 0 15px;
       background-image: url("../images/icons/arrow-right.svg");
       right: 0;
     }
+  }
+}
+.blog-box {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  &__author,
+  &__date {
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__author::before {
+    background-image: url("../images/icons/user-gray.svg");
+  }
+  &__date::before {
+    background-image: url("../images/icons/time-gray.svg");
   }
 }
