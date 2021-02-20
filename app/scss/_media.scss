@@ -396,6 +396,13 @@
     &__items {
       grid-template-columns: repeat(1, 1fr);
     }
+    &__item{
+      img{
+        width: auto;
+        height: 350px;
+        margin: 0 auto;
+      }
+    }
   }
   .comments-form {
     &__box-input {
@@ -583,6 +590,15 @@
       margin-bottom: 10px;
       + .product-tabs__top-item {
         margin-left: 0;
+      }
+    }
+  }
+  .blog {
+    &__item{
+      img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
       }
     }
   }
